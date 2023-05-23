@@ -1,1 +1,17 @@
 @import '~choices.js/public/assets/styles/choices.css';
+
+.choices__list--multiple .choices__item {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 3.75px;
+  margin-bottom: 3.75px;
+  background-color: green;
+  border: 1px solid green;
+  color: #ffffff;
+  word-break: break-all;
+  box-sizing: border-box;
+}
