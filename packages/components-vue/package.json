@@ -18,13 +18,13 @@
   "publishConfig": {
     "access": "public"
   },
+  "dependencies": {
+    "@vr33ni/choicesjs-stencil": "*"
+  },
   "devDependencies": {
     "@types/node": "^20.2.5",
     "typescript": "^5.0.4",
-    "vue": "^3.3.2"
-  },
-  "dependencies": {
-    "@vr33ni/choicesjs-stencil": "*"
+    "vue": "^3.3.4"
   },
   "auto": {
     "plugins": [
