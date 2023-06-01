@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:stencil": "npm i && cd ../../packages/components && npm run dev:stencil",
-    "preview:link": "run-s link dev",
+    "preview:link": "run-s create:link dev",
     "preview": "vite preview",
     "create:link": "cd ../../packages/components && npm link && cd ../../examples/vue3-example && npm link @vr33ni/choicesjs-stencil",
     "test:local": "run-p build:stencil preview:link"

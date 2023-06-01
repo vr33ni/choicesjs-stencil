@@ -19,6 +19,7 @@ const choices = computed(() => [
 
 ]);
 
+console.log("choices ", choices.value);
 
 </script>
 
@@ -29,7 +30,7 @@ const choices = computed(() => [
 
     <choicesjs-stencil type="text"></choicesjs-stencil>
     <hr />
-    <choicesjs-stencil type="single" :choices="[
+    <choicesjs-stencil type="single" choices="[
       { 'value': 'foo', 'label': 'Foo', 'selected': false, 'disabled': false },
       { 'value': 'bar', 'label': 'Bar', 'selected': false, 'disabled': false }
     ]"></choicesjs-stencil>

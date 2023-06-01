@@ -1,5 +1,6 @@
 import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
+import { frameworkTargets } from './framework-output-targets';
 
 export const config: Config = {
   globalStyle: 'src/global/global.scss',
@@ -9,13 +10,23 @@ export const config: Config = {
       components: ['choicesjs-stencil']
     }
   ],
+  ...frameworkTargets,
+
   outputTargets: [
     {
       type: 'dist',
-
-    }, {
-      type: 'www',
-      indexHtml: './index.html'
+      esmLoaderPath: '../loader',
+    },
+    {
+      type: 'dist-custom-elements',
+      generateTypeDeclarations: true,
+    },
+    //  {
+    //   type: 'www',
+    //   indexHtml: './index.html'
+    // },
+    {
+      type: 'docs-readme',
     },
     {
       type: 'www',
