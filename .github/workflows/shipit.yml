@@ -35,6 +35,8 @@ jobs:
         id: build
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
 
         run: | 
           cd packages/components
