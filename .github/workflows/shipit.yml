@@ -21,6 +21,7 @@ jobs:
         with:
           fetch-depth: 0 # fetch all tags for ship-it
 
+
       - name: download + setup auto
         uses: auto-it/setup-auto@v1
 
