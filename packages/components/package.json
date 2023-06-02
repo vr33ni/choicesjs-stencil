@@ -2,6 +2,9 @@
   "name": "@vr33ni/choicesjs-stencil",
   "version": "1.0.0",
   "description": "",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "types": "dist/types/components.d.ts",
@@ -43,9 +46,6 @@
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vr33ni/choicesjs-stencil.git"
