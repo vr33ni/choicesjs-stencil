@@ -6,15 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:stencil": "npm i && cd ../../packages/components && npm run dev:stencil",
-    "preview:link": "run-s create:link dev",
+    "build:wrapper": "npm i && cd ../../packages/components && npm i && npm run build:stencil && npm link && cd ../components-vue && npm i && npm link @vr33ni/choicesjs-stencil && npm run build",
+    "link": "cd ../../packages/components-vue && npm link && cd ../../examples/vue3-example && npm link @vr33ni/choicesjs-vue",
     "preview": "vite preview",
-    "create:link": "cd ../../packages/components && npm link && cd ../../examples/vue3-example && npm link @vr33ni/choicesjs-stencil",
-    "test:local": "run-p build:stencil preview:link"
+    "preview:link": "run-s link dev",
+    "test:local": "run-s build:wrapper preview:link"
   },
   "dependencies": {
     "vue": "^3.2.47",
-    "@vr33ni/choicesjs-stencil": "^1.0.0"
+    "vr33ni/choicesjs-vue": "*"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",

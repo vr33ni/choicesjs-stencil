@@ -10,21 +10,18 @@ export const config: Config = {
       components: ['choicesjs-stencil']
     }
   ],
-  ...frameworkTargets,
 
   outputTargets: [
     {
       type: 'dist',
       esmLoaderPath: '../loader',
     },
+    ...frameworkTargets,
+
     {
       type: 'dist-custom-elements',
       generateTypeDeclarations: true,
     },
-    //  {
-    //   type: 'www',
-    //   indexHtml: './index.html'
-    // },
     {
       type: 'docs-readme',
     },
