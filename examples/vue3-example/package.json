@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "vue": "^3.2.47",
-    "vr33ni/choicesjs-vue": "*"
+    "@vr33ni/choicesjs-vue": "1.0.1--canary.1.3b78b423420320e65f73e43052d02ef33f9431bc.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",

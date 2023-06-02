@@ -20,7 +20,10 @@ const choices = computed(() => [
 ]);
 
 console.log("choices ", choices.value);
-
+function updateValue(newVal) {
+  selected.value = newVal.detail.value;
+  // console.log('update value');
+}
 </script>
 
 <template>
@@ -30,12 +33,13 @@ console.log("choices ", choices.value);
 
     <choicesjs-stencil type="text"></choicesjs-stencil>
     <hr />
-    <choicesjs-stencil type="single" choices="[
-      { 'value': 'foo', 'label': 'Foo', 'selected': false, 'disabled': false },
-      { 'value': 'bar', 'label': 'Bar', 'selected': false, 'disabled': false }
+    <choicesjs-stencil type="single" name="single" :choices="[
+      { 'value': 'abc', 'label': 'Abc', 'selected': false, 'disabled': false },
+      { 'value': 'def', 'label': 'Def', 'selected': false, 'disabled': false }
+
     ]"></choicesjs-stencil>
     <hr />
-    <choicesjs-stencil type="multiple" name="name" :choices="choices" />
+    <choicesjs-stencil removeItemButton="true" @change="updateValue" type="multiple" name="multiple" :choices="choices" />
     <p>Selected: {{ selected }}</p>
 
   </div>
