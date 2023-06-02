@@ -1,0 +1,35 @@
+{
+  "name": "@vr33ni/choicesjs-vue",
+  "version": "1.0.0",
+  "description": "Dropdown Stencil component for Vue",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run tsc",
+    "tsc": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vr33ni/choicesjs-stencil.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@vr33ni/choicesjs-stencil": "1.0.1--canary.1.9e50f8e397280058a7c11383d88248d0135538bb.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "typescript": "^5.0.4",
+    "vue": "^3.3.4"
+  },
+  "auto": {
+    "plugins": [
+      "npm",
+      "released"
+    ]
+  }
+}

@@ -1,17 +1,1 @@
-<!doctype html><html><head></head><body><script data-build="2023-05-24T07:38:46">
-if ('serviceWorker' in navigator && location.protocol !== 'file:') {
-  window.addEventListener('load', function() {
-  navigator.serviceWorker.register('/sw.js')
-    .then(function(reg) {
-    reg.onupdatefound = function() {
-      var installingWorker = reg.installing;
-      installingWorker.onstatechange = function() {
-      if (installingWorker.state === 'installed') {
-        window.dispatchEvent(new Event('swUpdate'))
-      }
-      }
-    }
-    })
-    .catch(function(err) { console.error('service worker error', err) });
-  });
-}</script></body></html>
+<!doctype html><html><head></head><body></body></html>
