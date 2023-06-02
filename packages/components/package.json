@@ -1,6 +1,6 @@
 {
   "name": "@vr33ni/choicesjs-stencil",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "publishConfig": {
     "access": "public"
