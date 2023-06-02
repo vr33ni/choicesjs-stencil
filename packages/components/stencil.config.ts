@@ -30,8 +30,14 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
-  plugins: [sass()],
-  devServer: {
-    openBrowser: false
-  }
+  plugins: [
+    sass()
+  ],
+
+  extras: {
+    cloneNodeFix: true,
+    experimentalImportInjection: true,
+  },
+
+
 };

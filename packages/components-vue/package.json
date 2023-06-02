@@ -19,7 +19,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@vr33ni/choicesjs-stencil": "*"
+    "@vr33ni/choicesjs-stencil": "1.0.1--canary.1.9e50f8e397280058a7c11383d88248d0135538bb.0"
   },
   "devDependencies": {
     "@types/node": "^20.2.5",
